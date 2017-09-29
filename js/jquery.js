@@ -7,49 +7,6 @@ $(document).ready(function() {
         $(this).blur();
     })
     
-    $(window).scroll(function() {
-        if (!$(this).scrollTop() > 0){
-            $('.bounce').fadeIn();
-        }
-        
-        if ($('body').scrollTop() <= $( window ).height()*3 )  {
-            $('.bounce').fadeIn(800);// Hide your element
-        }
-        
-        if ($('body').scrollTop() >= $( window ).height()*3 )  {
-            $('.bounce').fadeOut(800);// Hide your element
-        }
-    });
-
-
-//    
-//    $("#buttonToScroll").click(function() {
-//        
-//        if ($('body').scrollTop() >= $( window ).height()) {
-//            
-//            $('html,body').animate({scrollTop: $("#3D").offset().top},800); 
-//            
-//        } else if ($('body').scrollTop() >= $( window ).height()/2) {
-//            
-//            $('html,body').animate({scrollTop: $("#information").offset().top},800); 
-//            
-//        } else {
-//            
-//            $('html,body').animate({scrollTop: $("#UX").offset().top},800);
-//            
-//        }
-//        
-//
-//
-//    });
-//    
-    //scroll back to top
-    $('a[href=\\#top]').click(function(){
-        $('html, body').animate({scrollTop:0}, 'slow');
-        return false;
-    });
-    
-    
     // Add smooth scrolling on all links inside the navbar
     $("#myNavbar a").on('click', function(event) {
 
