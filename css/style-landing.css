@@ -1,0 +1,196 @@
+/*general*/
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+  height:100%;
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  color:black;
+  position:relative;
+
+}
+
+#landing {
+    /* The image used */
+    background-image: url("../img/neuron.jpg");
+    background-color: #D0021B;
+
+    /* Full height */
+    height: 100%; 
+    width: 95%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    z-index: -5;
+}
+
+/*navbar*/
+.navbar-fixed-top{
+    background-color: transparent;
+    background: transparent;
+    position: absolute;
+    z-index: 20;
+    color: white;
+    border: none;
+}
+
+/*logo*/
+.navbar-brand {
+    color: white;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size:30px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0.4em 0.1em 0.4em 0.1em;
+    padding-left: 2em;
+}
+
+.navbar-default .navbar-brand:hover {
+    color:#777;
+}
+
+
+/*page links*/
+.navbar-nav {
+    color: #8c8c8c;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 12px 40px 15px 20px;
+    text-align: center;
+}
+
+.navbar-nav li a{
+    padding: 0.1em 0.1em 0.2em 0.1em;
+    margin: 1.5em 3em 0.5em 2em;
+}
+
+
+.navbar-nav {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	z-index: 100;
+}
+
+.navbar-nav a {
+	color: white;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a.active {
+	color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+button.navbar-toggle {
+    margin-top: 1em;
+}
+
+
+/*all landing page overlay content*/
+.landingText {
+    position: absolute;
+    z-index: 1;
+    margin-top: 37em;
+}
+
+/*landing page main heading*/
+.landingHead {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0em;
+    font-family: 'Prata', serif;
+    font-size: 64px;
+}
+
+/*landing page subtitle*/
+.landingSubHead {
+    color: white;
+    margin-top: 0;
+    margin-left: 0em;
+    padding-top: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 1.25em;
+}
+
+/*landing page portfolio button*/
+#portfolioButton {
+    margin-top: 0;
+    margin-left: 0em;
+    margin-bottom: 0em;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.5em 5em 0.5em 5em;
+    text-decoration: none;
+}
+
+#portfolioButton:hover {
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.5em 5em 0.5em 5em;
+    
+    transition: background .2s ease-in;
+}
+
+#portfolioButton:active {
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.5em 5em 0.5em 5em;
+}
+
+#portfolioButton:visited {
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.5em 5em 0.5em 5em;
+}
+
+
+/*mobile*/
+
+@media only screen and (max-width: 500px) {
+    .landingText {
+        margin-top: 15em;
+    }
+    .landingHead {
+        font-size: 50px;
+    }
+    .landingSubhead {
+        font-size: 10px;
+    }
+}
