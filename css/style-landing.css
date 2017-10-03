@@ -17,7 +17,7 @@ body {
 #landing {
     /* The image used */
     background-image: url("../img/neuron.jpg");
-    background-color: #D0021B;
+    background-color: black;
 
     /* Full height */
     height: 100%; 
