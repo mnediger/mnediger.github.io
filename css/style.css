@@ -120,6 +120,15 @@ button.navbar-toggle {
     max-width: 65ch;
 }
 
+.contactSection {
+    position: relative;
+    margin-bottom: 2em;
+    clear: both;
+    padding-left: 3em;
+    padding-right: 3em;
+    max-width: 100ch;
+}
+
 /*headshot*/
 .sectionImages {
     position: relative;
@@ -286,9 +295,11 @@ button.navbar-toggle {
 .smallParagraphs {
     color: #575757;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 19px;
     padding-left: 1.5em;
 }
+
+
 #portfolioPage.mainSection {
     position: relative;
     margin-bottom: 2em;
@@ -336,4 +347,57 @@ button.navbar-toggle {
 
 .list {
     font-size: 12px;
+}
+
+/*contact submission button*/
+#contactSubmit {
+    margin-top: 0;
+    margin-left: 0em;
+    margin-bottom: 0em;
+    background-color: #D0021B;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.5em 5em 0.5em 5em;
+    text-decoration: none;
+    border: none;
+}
+
+
+#contactSubmit:hover {
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.5em 5em 0.5em 5em;
+    
+    transition: background .2s ease-in;
+}
+
+#contactSubmit:active {
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.5em 5em 0.5em 5em;
+}
+
+#contactSubmit:visited {
+    background-color: #D0021B;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.5em 5em 0.5em 5em;
 }

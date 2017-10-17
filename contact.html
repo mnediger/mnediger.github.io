@@ -63,8 +63,8 @@
                         <div id="navigation" class="collapse navbar-collapse navbar-right">
                           <ul class="nav navbar-nav navbar-right">
                               <li><a href="/portfolio.html">Portfolio</a></li>
-                              <li><a href="#about" class="active">About</a></li>
-                              <li><a href="/contact.html">Contact</a></li>
+                              <li><a href="/about.html">About</a></li>
+                              <li><a href="#contact" class="active">Contact</a></li>
                             </ul>
                       </div>
                   </div>
@@ -77,24 +77,46 @@
                 <div class="spacerLarge"></div>
               </div>
               <div class="row">
-                <div class="col-md-2"></div>
-                    <div class="col-md-4">
-                        <div class="mainSection" id="about">
-                            <h2 class="sectionHead">I'm Midori.</h2>
-                            <p class="description">I design solutions to communication problems in science and medicine.</p>
-                            <p class="description">These solutions can take on a variety of forms - from an interactive web app that helps medical students learn human anatomy, to a print brochure that teaches a patient about a medical procedure. The defining characteristic of all of my solutions - they <i>distill complex scientific concepts to their essence</i>, and present them in ways that are equally engaging and beautiful.</p>
-                            <p class="description">I've had training in science, art, and design. I recently completed my <a href="https://bmc.med.utoronto.ca/bmc/">Master of Science in Biomedical Communications</a> at the University of Toronto, with a focus on Media Design.</p>
-                            <p>If you're interested in collaborating, send me a <a href="/contact.html">message</a> and you'll hear from me shortly!</p>
-                            <a href="https://ca.linkedin.com/in/midori-nediger-305010134" target="_blank">
-                                <img src="img/linkedIn-logo.svg" width=8%>
-                            </a>
+                  <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <div class="contactSection" id="contact">
+                            <h2 class="sectionHead">Contact</h2>
+                            <p>If you're in need of a biomedical communicator, leave me a message and you'll hear from me shortly!</p>
+                             <div class="spacerXSmall"></div>
+                            <div class="spacerXSmall"></div>
+                            
+                            <!-- Hidden message to show if contact is successful. -->
+                            <div id="submit-success" class="alert alert-success alert-dismissible collapse" role="alert">
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              Message received! I'll be in touch.
+                            </div>
+
+                            <!-- Hidden message to show if user encounters errors. -->
+                            <div id="submit-errors" class="alert alert-danger alert-dismissible collapse" role="alert">
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              It looks like there was an error submitting the form. Please try again later.
+                            </div>
+
+                            <!-- Formspree-powered contact form -->
+                            <form id="contact-form" class="form" action="/">
+                              <div class="form-group">
+                                <label for="name">Name <span style="font-weight:200; color:#D0021B;">*</span></label>
+                                <input class="form-control" type="text" name="name" required placeholder="Name">
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email <span style="font-weight:200; color:#D0021B;">*</span></label>
+                                <input class="form-control" type="email" name="_replyto" required placeholder="email@address.com">
+                              </div>
+                              <div class="form-group">
+                                <label for="message">Message <span style="font-weight:200; color:#D0021B;">*</span></label>
+                                <textarea class="form-control" name="message" placeholder="Message" required rows="5"></textarea>
+                              </div>
+                              <input class="btn btn-primary" id="contactSubmit" type="submit" value="Send">
+                            </form>
+
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="sectionImages">
-                            <img src="img/headshot.jpg" class="img-circle img-responsive" alt="Headshot" width="400" height="400">
-                        </div>
-                    </div>
+
                 </div>
                 <div class="row">
                     <div class="spacerSmall"></div>
@@ -122,6 +144,10 @@
     <script src="js/jquery.js"></script>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Prata" rel="stylesheet">
+    
+    <!--  Validate form  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
       
   </body>
 </html>
