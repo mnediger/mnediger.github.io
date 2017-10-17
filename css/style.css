@@ -126,6 +126,8 @@ button.navbar-toggle {
     clear: both;
     padding-left: 3em;
     padding-right: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
     max-width: 100ch;
 }
 
