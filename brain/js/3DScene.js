@@ -427,8 +427,6 @@ window.onload = function() {
         addObjects(whiteMatterFiles,whiteMatterGroup);
         console.log("loaded");
         addToScene(); //add new 3D objects to the scene
-        $("#cover").hide();
-        $("#spinner").hide();
         
         //////////////////////////////EVENT LISTENERS///////////////////////////////
         //click model, hover over model
@@ -513,6 +511,8 @@ window.onload = function() {
     
         onWindowResize();
         $("#portfolioImage").hide();
+        $("#cover").hide();
+        $("#spinner").hide();
     }
     
     
