@@ -511,8 +511,13 @@ window.onload = function() {
     
         onWindowResize();
         $("#portfolioImage").hide();
-        $("#cover").hide();
-        $("#spinner").hide();
+        
+        function hideStuff() {
+            $("#cover").hide();
+            $("#spinner").hide();
+        }
+        setTimeout(hideStuff, 2000);
+
     }
     
     
