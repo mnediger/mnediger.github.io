@@ -18,9 +18,20 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
       
+      <script src="brain/js/three.min.js"></script>
+        <script src="brain/js/Projector.js"></script>
+        <script src="brain/js/OBJLoader.js"></script>
+        <script src="brain/js/Detector.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        <link href="brain/css/style.css" rel="stylesheet">
+      
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="10">
+      
       
     <div id="wrapper">
       
@@ -50,6 +61,9 @@
         </div>
         
         <div id="content">
+            <div id="cover"></div>
+            
+            <div class="spinner" id="spinner"></div>
             
             <div class="row">
                 <div class="spacerLarge"></div>
@@ -61,7 +75,8 @@
                     <div class="mainSection" id="portfolioPage">
                         <h2 class="sectionHead">POND Brain</h2>
                         <h3 class="sectionSubhead">Master's Research Project</h3>
-                        <p class="description">This project aims to address a communication gap between the scientists who study the neurobiological underpinnings of neurodevelopmental disorders and those who are personally affected by the disorders.</p>
+                        <h3>Summary</h3>
+                        <p class="description">This project addresses a communication gap between the scientists who study the neurobiological underpinnings of neurodevelopmental disorders and those who are personally affected by the disorders.</p>
                         <p class="description">It's a web-based application that connects an interactive 3D brain model with descriptions of the structure and function of the brain.</p>
                         <p class="description">As the sole designer and lead developer of the project, I was responsible for everything from defining the scope of the project to creating final project assets.</p>
                         <div class="row">
@@ -115,10 +130,113 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive" src="img/brain-crossSection.png" alt="Cross section of the brain" id="portfolioImage">
+                    <div id="canvas" style="width:85%; height:600px; border-width:0px; position: static; padding:0;"></div>
+                </div>
+            </div>
+        
+            
+            
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-11">
+                    <div class="mainSection" id="portfolioPage">
+                        <h3>Supervisory Committee</h3>
+                        
+                    </div>
                 </div>
             </div>
             
+            
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <div class="mainSection" id="portfolioPage">
+                        <p class="smallParagraphs" style="padding-left: 0; padding-right:0; margin:0;"><span class="smallHeadings">Supervisor</span><br><strong>Professor Michael Corrin</strong><br>BFA, BA, Hons BSc, MScBMC, CMI<br>Assistant Professor Teaching Stream<br>Biomedical Communications<br>University of Toronto</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="mainSection" id="portfolioPage">
+                        <p class="smallParagraphs" style="padding-left: 0; padding-right:0; margin:0;"><span class="smallHeadings">Content Advisor</span><br><strong>Dr. Laurie Doering</strong><br>BSc, MSc, PhD <br>Professor<br>Pathology and Molecular Medicine<br>McMaster University</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="mainSection" id="portfolioPage">
+                        <p class="smallParagraphs" style="padding-left: 0; padding-right:0; margin:0;"><span class="smallHeadings">Second Voting Member</span><br><strong>Professor Marc Dryer</strong><br>Hons BA, MSc, MScBMC<br>Associate Professor Teaching Stream<br>Biomedical Communications<br>University of Toronto</p>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            
+            <div class="spacerSmall"></div>
+            
+<!--
+            <div class="greyBG">
+            <div class="spacerXSmall"></div>
+            <div class="spacerXSmall"></div>
+            <div class="spacerXSmall"></div>
+            <h3 style="text-align: center; font-family: Prata, serif; font-size:20pt;">Process</h3>
+            
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5"></div>
+                <div class="col-md-5">
+                    <div class="mainSection" id="portfolioPage">
+                        
+                        <h4><strong>About</strong></h4>
+                        <p>The goal of this project was to create an e-learning environment that demonstrated the structural and functional correlates of neurodevelopmental disorders. It was designed as an online resource for parents of children with neurodevelopmental disorders to learn about the neurobiological basis of these disorders.</p>
+                        <p>In its current incarnation (as a functional proof-of-concept), it allows users to explore the structure of a typically developing brain by manipulating a 3-dimensional brain model and reading the associated plain language text. The text describes the notable functions of major functional areas, and users can click keywords in the text to reveal the corresponding components of the brain model. The application also features a novel method of visualizing neuroimaging data, in which the results of individual neuroimaging studies are displayed graphically on the brain model.</p>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5"></div>
+                <div class="col-md-5">
+                    <div class="mainSection" id="portfolioPage">
+                        <h4><strong>Design</strong></h4>
+                        <h3 class="sectionSubhead">Define Goals</h3>
+                        <p>Paragraph.</p>
+                        <h3 class="sectionSubhead">Define Success</h3>
+                        <p>Paragraph.</p>
+                        <h3 class="sectionSubhead">Audit Existing Resources</h3>
+                        <p>Paragraph.</p>
+                        <h3 class="sectionSubhead">Understand The User</h3>
+                        <p>User flows. User personas. User scenarios. </p>
+                        <h3 class="sectionSubhead">Create Wireframes</h3>
+                        <p></p>
+                        <h3 class="sectionSubhead">Iterate</h3>
+                        <p></p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5"></div>
+                <div class="col-md-5">
+                    <div class="mainSection" id="portfolioPage">
+                        <h4><strong>Implement</strong></h4>
+                        <h3 class="sectionSubhead">3D Models</h3>
+                        <p></p>
+                        <h3 class="sectionSubhead">Illustrations</h3>
+                        <p></p>
+                        <h3 class="sectionSubhead">Web Development</h3>
+                        <p></p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+                
+                </div>
+-->
+    
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
@@ -141,6 +259,9 @@
             </div>
             
             <div class="spacerXLarge"></div>
+            <div id="tooltipDiv"></div>
+           
+            <script src="brain/js/3DScene.js"></script>
             
         </div>
         

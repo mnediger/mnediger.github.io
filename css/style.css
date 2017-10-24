@@ -403,3 +403,59 @@ button.navbar-toggle {
     letter-spacing: 2px;
     padding: 0.5em 5em 0.5em 5em;
 }
+
+.greyBG {
+    background-color: #f8f8f8;
+    width:78%;
+    margin: 0 auto;
+}
+
+#tooltipDiv {
+    font-family: "Roboto", sans-serif;
+    font-size: 9pt; 
+    background-color: white;
+    
+    width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    
+    height: max-content;
+    height: -moz-max-content;
+    height: -webkit-max-content;
+    
+    padding-top:0.3em;
+    padding-bottom: 0.3em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+
+    position: fixed;
+    
+    top:0;
+    left: 0;
+
+    margin: auto;
+}
+
+#cover {position: fixed; height: 100%; width: 100%; top:90px; left: 0; background: #000; z-index:9999; background-color: #fff;}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+ 
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border-top: 2px solid #D0021B;
+  border-right: 2px solid transparent;
+  animation: spinner 1s linear infinite;
+  z-index: 1000000;
+}
+
