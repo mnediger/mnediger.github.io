@@ -516,7 +516,7 @@ window.onload = function() {
             $("#cover").hide();
             $("#spinner").hide();
         }
-        setTimeout(hideStuff, 2000);
+        setTimeout(hideStuff, 4000);
 
     }
     
