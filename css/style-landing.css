@@ -103,7 +103,7 @@ button.navbar-toggle {
 .landingText {
     position: absolute;
     z-index: 1;
-    margin-top: 37em;
+    margin-top: 50vh;
 }
 
 /*landing page main heading*/
@@ -185,7 +185,7 @@ button.navbar-toggle {
 
 @media only screen and (max-width: 500px) {
     .landingText {
-        margin-top: 15em;
+        margin-top: 25vh;
     }
     .landingHead {
         font-size: 50px;
