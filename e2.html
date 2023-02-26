@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        
+        <title>Midori Nediger &#8212 Product Design Portfolio</title>
+        
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@800&display=swap" rel="stylesheet">
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        
+    </head>
+    
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="/site/index.html">MN</a>
+                <div class="expand navbar-expand" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#work">Work</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Header-->
+        <header class="case-study-header-4">
+            
+            <div class="container px-5" style="max-width: 1050px;">
+                
+                <div class="row gx-5 align-items-center">
+                    
+                    <div class="col-">
+                        
+                        <div class="mb-5 mb-lg-0 text-center text-lg-center">
+                            <img src="assets/e2-header.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="case-study-body">
+            <div class="container px-5">
+                
+                <div class="btn">
+                    <a href="/site/index.html" class="btn btn-light">&#60; Projects</a>
+                </div>
+
+                <h1 class="display-4 lh-2 mb-3 fw-bold">Designing an intuitive, accessible editor</h1>
+                <p class="lead fw-light text-muted mb-2">Venngage | 2022</p>
+                
+                
+                <h2 class="mt-5 mb-1">The context</h2>
+                
+                <p class="fw-light text-muted">Product development at Venngage was slowing due to technical debt</p>
+                <hr>
+                
+                    <div class="row gx-5">
+                        <div class="col-lg-8 col-sm-12">
+                            <p class="fw-light">Venngage is a web-based graphic design platform, launched in 2015. By 2021, product development within the design editor, the core of Venngage’s product, was slowing due to technical debt.</p>
+                            <p class="fw-light">To allow us to ship more quickly and reposition Venngage as an accessible design platform, technical leaders decided it was time to rebuild the editor from the ground up.</p>
+                            <p class="fw-light">We’ve been working since the spring of 2022 to <span class="fw-bold">design, build, and launch a new editor.</span></p>
+                        </div>
+                    </div>
+                
+                <h2 class="mt-5 mb-1">The requirements</h2>
+                <hr>
+                
+                    <div class="row gx-5">
+                        <div class="col-lg-8 col-sm-12 mb-4">
+                            <ul class="fw-light">
+                                <li class="mb-3">The editor must be accessible to WCAG 2.1 AA</li>
+                                <li class="mb-3">Improve the usability of the overall editing experience, redesigning widgets as necessary (read about the <a href="tables.html">redesign of the table widget</a> and the <a href="stat-chart.html">design of a new infographic chart widget</a>)</li>
+                                <li class="mb-3">Develop Venngage's first design system, aligned with brand guidelines that were refreshed in 2021 but never applied to the editor</li>
+                                <li class="mb-3">Support the creation of accessible designs (read the <a href="accessible-designer.html">full case study</a>)</li>
+                                <li class="mb-3">Ship v1 within 6 months, with a larger launch within 1 year</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                
+                <h2 class="mt-5 mb-1">Pain points and solutions</h2>
+                <hr>
+                
+                <div class="row gx-5">
+                    <div class="col-lg-8 col-sm-12">
+                        <p class="fw-light mb-0">To kick off the project I performed a usability evaluation, interviewed internal and external users, and reviewed support chats. Based on these, we tackled a number of pain points, including:</p>
+                    </div>
+                </div>
+                
+                <h3 class="">1. Lack of space for editing</h3>
+                
+                <div class="row gx-5">
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">Before:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">The left menu took up almost a 5th of the horizontal space on our users’ most common screen size. If an editing menu was open on the right side of the screen, the visible canvas area was very limited.</li>
+                            <li class="mb-3">The global nav (consistent with other pages of the product) made it easy for users to access other pages but took up valuable real estate and wasn’t useful while the user was editing.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">After:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">A new left menu where categories are always visible but menu content is collapsed by default, so users can work with the menu closed without losing context.</li>
+                            <li class="mb-3">Removed the global nav. Moved design-level functionality and key navigation options into a top-most nav bar, keeping object-level options in a separate, in-context toolbar (with options that are specific to a type of widget on the left, and options that are common to all widgets on the right). Moved page-level settings into the in-context toolbar on page selection.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row gx-5">  
+                    <img src="assets/e2-space-ba.png" alt="Venngage editor before and after">
+                </div>
+                
+                <h3 class="">2. Hard to find basic settings and relevant widgets</h3>
+                
+                <div class="row gx-5">
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">Before:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">Users struggled to find design-level settings like page size and document-level settings like grid</li>
+                            <li class="mb-3">Users struggled to find basic shapes and lines</li>
+                            <ul>
+                                <li class="mb-3">How do I add a shape, like a rectangle, to a page?" "Got it. Never would have thought to look for rectangles under Icons."</li>
+                            </ul>
+                            <li class="mb-3">Users struggled to find icons that matched the style of icons used in templates</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">After:</p>
+                        <p class="fw-light">Updated the information architecture, including:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">Treating the canvas like other widgets, showing page settings (page size and background color) while the page is selected</li>
+                            <li class="mb-3">Moving document-level settings into a File menu, which users expected due to familiarity  with other tools</li>
+                            <li class="mb-3">Adding a separate Shapes category to the left menu to house basic shapes and lines</li>
+                            <li class="mb-3">Organizing icons into groups with other icons with the same style</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row gx-5">  
+                    <img src="assets/e2-ia-ba.png" alt="Venngage editor before and after">
+                </div>
+                
+                <h3 class="">3. Hard to apply styles across a design</h3>
+                
+                <div class="row gx-5">
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">Before:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">Editing was extremely manual - for the most part, there was no way to quickly apply style changes to all similar elements in a design. Users had to select and edit objects one at a time. Users could select multiple text widgets or multiple shapes to apply style changes, but this only worked for basic styles and wasn’t possible across multiple pages in a design.</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">After:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">All shared styles are editable while multiple widgets are selected</li>
+                            <li class="mb-3">Added design-level <span class="fw-bold">Styles</span> to allow users to apply changes to all similar elements across multiple pages in a design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row gx-5">  
+                    <img src="assets/e2-styles-ba.png" alt="Venngage editor before and after">
+                </div>
+
+                <h2 class="mt-5 mb-1">Other tablestakes improvements</h2>
+                <hr>
+                <h3 class="mb-0">Adding a right click context menu</h3>
+                
+                    <div class="row gx-5">
+                        <div class="col-lg-6 col-sm-12">
+                            <h4>Problem</h4>
+                            <p class="fw-light">Many new users weren't aware that widgets could be copied and pasted and would reach out to Support for help.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <h4>Solution</h4>
+                            <p class="fw-light">Noticing in contextual interviews that many users right-clicked to copy and paste text into text widgets rather than using keyboard shortcuts, we added a context menu on right click that contained common editing actions, including copy and paste, and surfaced the keyboard shortcuts for those actions.</p>
+                        </div>
+                    </div>
+                
+                
+                <h4>Results</h4>
+                
+                    <div class="row gx-5">
+                        <div class="col-lg-6 col-sm-12">
+                            <p class="fw-light">15-30% of the actions available in the context menu were performed using the context menu (compared to via the toolbar or keyboard shortcuts)</p>
+                            <p class="fw-light">We saw a ~30% increase in usage of keyboard shortcuts (these weren’t previously surfaced to the user in the UI)</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <img src="assets/e2-context.png" class="img-fluid">
+                        </div>
+                    </div>
+                
+                <h3>Improving canvas zoom UX</h3>
+                
+                <h4>Problem</h4>
+                
+                    <div class="row gx-5">
+                        <div class="col-lg-6 col-sm-12">
+                            <p class="fw-light">Many Venngage users work on small screens. Design sizes, especially for more complex designs like diagrams, could get quite large, forcing the user to zoom and and out frequently throughout the design process.</p>
+                            <p class="fw-light">Zoom options are available only via a dropdown, requiring 2 clicks for each change to the zoom level.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <img src="assets/e2-zoom-old.png" class="img-fluid">
+                        </div>
+                    </div>
+                
+                <div class="row gx-5">
+                    <div class="col-lg-6 col-sm-12">
+                        <h4>Solution</h4>
+                        <ul>
+                            <li class="fw-light">Added support for keyboard shortcuts and gestures</li>
+                            <li class="fw-light">Added + and - buttons to allow users to increment the zoom in 1 click</li>
+                            <li class="fw-light">Added a field for users to specify any zoom level directly</li>
+                        </ul>
+                        <h4>Results</h4>
+                        <p class="fw-light">We saw a 32% increase in zoom usage after the update.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="assets/e2-zoom-new.png" class="img-fluid">
+                    </div>
+                </div>
+                
+                
+                <h3>Improving toolbar UX</h3>
+                
+                <div class="row gx-5">
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">Before:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">Many common settings available in the in-context toolbar forced the user to choose from a long list of options in a dropdown.</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">After:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">Updated the UX for some styling options available in the in-context toolbar. To edit text size, for example, the user can now enter a specific value in a text field, choose from common options from a dropdown, or increment the text size with plus and minus buttons.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row gx-5">  
+                    <img src="assets/e2-text-ba.png" alt="Venngage editor before and after">
+                </div>
+                
+                
+                <h3>Adding a sidebar page manager</h3>
+                
+                <div class="row gx-5">
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">Before:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">Page thumbnails were only available via a modal which blocked the view of the active page, so users couldn’t view other pages while editing. It was easy to get disoriented in a design with many pages, and there was friction for common actions like reordering and duplicating pages. </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <p class="fw-bold mb-3">After:</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">Added a sidebar page manager so page thumbnails can be visible while editing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row gx-5">  
+                    <img src="assets/e2-pm-ba.png" alt="Venngage editor before and after">
+                </div>
+
+                <h2 class="mt-5 mb-1">The results</h2>
+                <hr>
+                
+                <div class="row gx-5">
+                    <div class="col-lg-8 col-sm-12 mb-4">
+                        <p class="fw-light">We're releasing improvements incrementally as we build out features from the original editor.</p>
+                        <p class="fw-light">Even though the new editor is still lacking some core functionality, <span class="fw-bold">new users who create a design in the new editor are more likely to complete that design and upgrade</span> than those who create a design in the original editor.</p>
+                        <p class="fw-light">We're looking forward to seeing these metrics improve even more as we continue to work towards feature parity.</p>
+                </div>
+
+                </div>
+            </div>
+        </section>
+        
+        
+         <!-- Footer-->
+        <footer class="bg-purple text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy;Midori Nediger, 2023. All rights reserved.</div>
+                    <a href="https://www.linkedin.com/in/midori-nediger/" target="_blank">LinkedIn</a>
+                    <!-- <span class="mx-1">&middot;</span>
+                    <a href="#!">Resume</a> -->
+                </div>
+            </div>
+        </footer>
+       
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+    </body>
+</html>

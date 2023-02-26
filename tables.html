@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        
+        <title>Midori Nediger &#8212 Product Design Portfolio</title>
+        
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@800&display=swap" rel="stylesheet">
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        
+    </head>
+    
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="/site/index.html">MN</a>
+                <div class="expand navbar-expand" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#work">Work</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Header-->
+        <header class="case-study-header-3">
+            
+            <div class="container px-5" style="max-width: 1050px;">
+                
+                <div class="row gx-5 align-items-center">
+                    
+                    <div class="col-">
+                        
+                        <div class="mb-5 mb-lg-0 text-center text-lg-center">
+                            <img src="assets/table-header.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="case-study-body">
+            <div class="container px-5">
+                
+                <div class="btn">
+                    <a href="/site/index.html" class="btn btn-light">&#60; Projects</a>
+                </div>
+
+                <h1 class="display-4 lh-2 mb-3 fw-bold">Designing a WYSIWYG table widget</h1>
+                <p class="lead fw-light text-muted mb-2">Venngage | 2022</p>
+                
+                
+                <h2 class="mt-5 mb-1">The context</h2>
+                
+                    <p class="fw-light text-muted">Venngage is a graphic design tool that specializes in infographics</p>
+                    <hr>
+                
+                    <div class="row gx-5">
+                        <div class="col-lg-8 col-sm-12">
+                            <p class="fw-light">Venngage is a web-based SaaS graphic design tool. Many of Venngage’s core users use the tool to create documents like infographics, reports, presentations, and diagrams to aid communication at work. </p>
+                            <p class="fw-light mb-4">Many of these designs feature data, visualized in charts and tables. Users often cite Venngage’s data visualization capabilities as a key reason they choose Venngage over similar competitors. With that in mind, we want to ensure that our data-focused templates are as easy to edit as possible.</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <figure>
+                                <img class="img-fluid" src="assets/table-template-example.png">
+                            <figcaption class="figure-caption mt-1">An example of a Venngage report template featuring a table widget.</figcaption>
+                        </figure>
+                        </div>
+                    </div>
+                
+                <h2 class="mt-5 mb-1">The pain points</h2>
+                
+                
+                    <p class="fw-light text-muted">The existing table widget was confusing and tedious to edit</p>
+                    <hr>
+                
+                 <div class="row gx-5">
+                    <div class="col-lg-8 col-sm-12">
+                        <p class="fw-light">Through</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">Table widgets were edited via a separate data table in a right menu. When tables had many columns or lots of content in a cell, the limited screen space made it difficult (and sometimes impossible) to select cells in the right menu and see the edits on the canvas</li>
+                            <li class="mb-3">Users were limited by the cell content and the widget size when resizing, making it tedious to adjust a table to fit their content and the canvas. Users often had to go back and forth between resizing the widget and resizing the columns to get to their desired result. </li>
+                            <li class="mb-3">Users struggled to discover how to resize columns. The affordance was subtle (just a change to the cursor) and resizing was only available while hovering over the header row dividers.</li>
+                            <li class="mb-3">The table was scrollable if the content overflowed the height of the widget, but only when sharing designs via Venngage link - not in PDF downloads that most people used. Users didn’t realize this until they downloaded, then would have to go back and fix their design and re-download.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <img src="assets/tables-old-demo.gif" alt="A gif showing the editing process of the original table widget.">
+                </div>
+                    
+                
+                <h2 class="mt-5 mb-1">The solution</h2>
+                <hr>
+                
+               <div class="row gx-5">
+                    <div class="col-lg-8 col-sm-12">
+                        <p class="fw-light">Through</p>
+                        <ul class="fw-light">
+                            <li class="mb-3">A WYSIWYG table. Consistent with a basic text widget, text is edited directly on the canvas, and cells can be selected and styled via an in-context toolbar.</li>
+                            <li class="mb-3">Updated resizing behaviour and affordances:</li>
+                            <ul class="fw-light">
+                                <li class="mb-3">Users can hover over any part of a column divider to resize. There’s a clear affordance to indicate that resizing is available.</li>
+                                <li class="mb-3">Resizing the widget impacts all columns proportionally.</li>
+                                <li class="mb-3">Resizing one column divider impacts the size of only the column to the left of that divider. The widget size adjusts in response.</li>
+                                <li class="mb-5">Text characters wrap onto new lines, so the user can freely resize regardless of content</li>
+                            </ul>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <img src="assets/tables-new-demo.gif" alt="A gif showing the design of the new table, with editing options in an in-context toolbar.">
+                </div>
+
+                <h2 class="mt-5 mb-1">The next steps</h2>
+                <hr>
+                
+                <div class="row gx-5">
+                    <div class="col-lg-8 col-sm-12">
+                        <p class="fw-light">In the current design, users must choose from a list of options in the toolbar or right-click context menu to add and remove columns and rows. Through user tests we've found this pattern isn’t particularly learnable for some - we’ve noticed that some users have to pause and think each time they want to add or remove a column or row.</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5">
+                    <div class="col-lg-6 col-sm-12 mb-5">
+                        <img src="assets/table-insert-button.png" class="img-fluid" alt="The insert options in the table toolbar.">
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="assets/table-insert-right-click.png" class="img-fluid" alt="The insert options in the table toolbar.">
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-lg-8 col-sm-12 mb-4">
+                        <p class="fw-light">To address this, we hope to add some affordances directly on the canvas to make it easier to:</p>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-lg-8 col-sm-12">
+                        <ul class="fw-light">
+                            <li class="mb-3">Add and remove columns and rows</li>
+                            <li class="mb-3">Reorder columns and rows</li>
+                            <li class="mb-3">Select entire columns and rows</li>
+                            <li class="mb-3">Move the table</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-12">
+                        <img src="assets/table-next-steps.png" alt="The table widget with add and delete buttons." class="img-fluid">
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        
+        
+         <!-- Footer-->
+        <footer class="bg-purple text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy;Midori Nediger, 2023. All rights reserved.</div>
+                    <a href="https://www.linkedin.com/in/midori-nediger/" target="_blank">LinkedIn</a>
+                    <!-- <span class="mx-1">&middot;</span>
+                    <a href="#!">Resume</a> -->
+                </div>
+            </div>
+        </footer>
+       
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+    </body>
+</html>
