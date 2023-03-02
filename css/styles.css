@@ -59,7 +59,7 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.25rem;
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -193,11 +193,6 @@ div .project-4:hover {
     background-color:rgba(255, 255, 255, 0.25);
 }
 
-div .highlight-light {
-    background-color: #e3e1fe;
-    border-radius:20px;
-}
-
 p span.text-highlight-dark {
     color:#ffffff;
     background-color: #4D24F4;
@@ -219,7 +214,6 @@ p span.text-highlight-light {
 div .highlight-light {
     color:#000000;
     background-color: #F5F7FA;
-    padding:20px;
     border-radius: 6px;
 
 }
@@ -804,26 +798,32 @@ progress {
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+    width: 80%;
   }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
+    width: 80%;
   }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
+    width: 60%;
   }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
+    width: 60%;
+
   }
 }
 .row {

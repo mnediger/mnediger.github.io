@@ -29,7 +29,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="/site/index.html">MN</a>
+                <a class="navbar-brand fw-bold" href="/index.html">MN</a>
                 <div class="expand navbar-expand" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#work">Work</a></li>
@@ -69,41 +69,28 @@
                 
                 <h2 class="mt-5 mb-1">The context</h2>
                 
-                <p class="fw-light text-muted">Product development at Venngage was slowing due to technical debt</p>
-                <hr>
-                
-                    <div class="row gx-5">
-                        <div class="col-lg-8 col-sm-12">
-                            <p class="fw-light">Venngage is a web-based graphic design platform, launched in 2015. By 2021, product development within the design editor, the core of Venngage’s product, was slowing due to technical debt.</p>
-                            <p class="fw-light">To allow us to ship more quickly and reposition Venngage as an accessible design platform, technical leaders decided it was time to rebuild the editor from the ground up.</p>
-                            <p class="fw-light">We’ve been working since the spring of 2022 to <span class="fw-bold">design, build, and launch a new editor.</span></p>
-                        </div>
-                    </div>
+                    <p class="fw-light text-muted">Product development at Venngage was slowing due to technical debt</p>
+                    <hr>
+
+                    <p class="fw-light">Venngage is a web-based graphic design platform, launched in 2015. By 2021, product development within the design editor, the core of Venngage’s product, was slowing due to technical debt.</p>
+                    <p class="fw-light">To allow us to ship more quickly and reposition Venngage as an accessible design platform, technical leaders decided it was time to rebuild the editor from the ground up.</p>
+                    <p class="fw-light">We’ve been working since the spring of 2022 to <span class="fw-bold">design, build, and launch a new editor.</span></p>
                 
                 <h2 class="mt-5 mb-1">The requirements</h2>
-                <hr>
                 
-                    <div class="row gx-5">
-                        <div class="col-lg-8 col-sm-12 mb-4">
-                            <ul class="fw-light">
-                                <li class="mb-3">The editor must be accessible to WCAG 2.1 AA</li>
-                                <li class="mb-3">Improve the usability of the overall editing experience, redesigning widgets as necessary (read about the <a href="tables.html">redesign of the table widget</a> and the <a href="stat-chart.html">design of a new infographic chart widget</a>)</li>
-                                <li class="mb-3">Develop Venngage's first design system, aligned with brand guidelines that were refreshed in 2021 but never applied to the editor</li>
-                                <li class="mb-3">Support the creation of accessible designs (read the <a href="accessible-designer.html">full case study</a>)</li>
-                                <li class="mb-3">Ship v1 within 6 months, with a larger launch within 1 year</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <hr>
+                    <ul class="fw-light">
+                        <li class="mb-3">The editor must be accessible to WCAG 2.1 AA</li>
+                        <li class="mb-3">Improve the usability of the overall editing experience, redesigning widgets as necessary (read about the <a href="tables.html">redesign of the table widget</a> and the <a href="stat-chart.html">design of a new infographic chart widget</a>)</li>
+                        <li class="mb-3">Develop Venngage's first design system, aligned with brand guidelines that were refreshed in 2021 but never applied to the editor</li>
+                        <li class="mb-3">Support the creation of accessible designs (read the <a href="accessible-designer.html">full case study</a>)</li>
+                        <li class="mb-3">Ship v1 within 6 months, with a larger launch within 1 year</li>
+                    </ul>
                     
-                
                 <h2 class="mt-5 mb-1">Pain points and solutions</h2>
-                <hr>
                 
-                <div class="row gx-5">
-                    <div class="col-lg-8 col-sm-12">
-                        <p class="fw-light mb-0">To kick off the project I performed a usability evaluation, interviewed internal and external users, and reviewed support chats. Based on these, we tackled a number of pain points, including:</p>
-                    </div>
-                </div>
+                    <hr>
+                    <p class="fw-light mb-0">To kick off the project I performed a usability evaluation, interviewed internal and external users, and reviewed support chats. Based on these, we tackled a number of pain points, including:</p>
                 
                 <h3 class="">1. Lack of space for editing</h3>
                 
@@ -186,45 +173,37 @@
                 <h3 class="mb-0">Adding a right click context menu</h3>
                 
                     <div class="row gx-5">
-                        <div class="col-lg-6 col-sm-12">
+                        <div class="col-lg-8 col-sm-12">
                             <h4>Problem</h4>
-                            <p class="fw-light">Many new users weren't aware that widgets could be copied and pasted and would reach out to Support for help.</p>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
+                            <p class="fw-light">Many new users weren't aware that widgets could be copied and pasted and would reach out to Support for help. We noticed in contextual interviews that many users right-clicked to copy and paste text into text widgets rather than using keyboard shortcuts.</p>
                             <h4>Solution</h4>
-                            <p class="fw-light">Noticing in contextual interviews that many users right-clicked to copy and paste text into text widgets rather than using keyboard shortcuts, we added a context menu on right click that contained common editing actions, including copy and paste, and surfaced the keyboard shortcuts for those actions.</p>
-                        </div>
-                    </div>
-                
-                
-                <h4>Results</h4>
-                
-                    <div class="row gx-5">
-                        <div class="col-lg-6 col-sm-12">
+                            <p class="fw-light">We added a context menu on right click that contained common editing actions, including copy and paste, and surfaced the keyboard shortcuts for those actions.</p>
+                            <h4>Results</h4>
                             <p class="fw-light">15-30% of the actions available in the context menu were performed using the context menu (compared to via the toolbar or keyboard shortcuts)</p>
                             <p class="fw-light">We saw a ~30% increase in usage of keyboard shortcuts (these weren’t previously surfaced to the user in the UI)</p>
                         </div>
-                        <div class="col-lg-6 col-sm-12">
+                        <div class="col-lg-4 col-sm-12">
                             <img src="assets/e2-context.png" class="img-fluid">
                         </div>
                     </div>
+                
                 
                 <h3>Improving canvas zoom UX</h3>
                 
                 <h4>Problem</h4>
                 
                     <div class="row gx-5">
-                        <div class="col-lg-6 col-sm-12">
+                        <div class="col-lg-8 col-sm-12">
                             <p class="fw-light">Many Venngage users work on small screens. Design sizes, especially for more complex designs like diagrams, could get quite large, forcing the user to zoom and and out frequently throughout the design process.</p>
                             <p class="fw-light">Zoom options are available only via a dropdown, requiring 2 clicks for each change to the zoom level.</p>
                         </div>
-                        <div class="col-lg-6 col-sm-12">
+                        <div class="col-lg-4 col-sm-12">
                             <img src="assets/e2-zoom-old.png" class="img-fluid">
                         </div>
                     </div>
                 
                 <div class="row gx-5">
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-8 col-sm-12">
                         <h4>Solution</h4>
                         <ul>
                             <li class="fw-light">Added support for keyboard shortcuts and gestures</li>
@@ -234,7 +213,7 @@
                         <h4>Results</h4>
                         <p class="fw-light">We saw a 32% increase in zoom usage after the update.</p>
                     </div>
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-4 col-sm-12">
                         <img src="assets/e2-zoom-new.png" class="img-fluid">
                     </div>
                 </div>
@@ -289,7 +268,7 @@
                 <hr>
                 
                 <div class="row gx-5">
-                    <div class="col-lg-8 col-sm-12 mb-4">
+                    <div class="col-12 mb-4">
                         <p class="fw-light">We're releasing improvements incrementally as we build out features from the original editor.</p>
                         <p class="fw-light">Even though the new editor is still lacking some core functionality, <span class="fw-bold">new users who create a design in the new editor are more likely to complete that design and upgrade</span> than those who create a design in the original editor.</p>
                         <p class="fw-light">We're looking forward to seeing these metrics improve even more as we continue to work towards feature parity.</p>
