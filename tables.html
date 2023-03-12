@@ -76,7 +76,7 @@
                         
                     <div class="row gx-5 mt-5">
                         <div class="col-12 text-center">
-                            <figure>
+                        <figure>
                                 <img class="img-fluid" src="assets/table-template-example.png">
                             <figcaption class="figure-caption mt-1">An example of a Venngage report template featuring a table widget.</figcaption>
                         </figure>
@@ -90,41 +90,73 @@
                     <p class="fw-light text-muted">The existing table widget was confusing and tedious to edit</p>
                     <hr>
                 
-                 <div class="row gx-5">
-                    <div class="col-12 mb-4">
-                        <ul class="fw-light">
-                            <li class="mb-3">Table widgets were edited via a separate data table in a right menu. When tables had many columns or lots of content in a cell, the limited screen space made it difficult (and sometimes impossible) to select cells in the right menu and see the edits on the canvas</li>
-                            <li class="mb-3">Users were limited by the cell content and the widget size when resizing, making it tedious to adjust a table to fit their content and the canvas. Users often had to go back and forth between resizing the widget and resizing the columns to get to their desired result. </li>
-                            <li class="mb-3">Users struggled to discover how to resize columns. The affordance was subtle (just a change to the cursor) and resizing was only available while hovering over the header row dividers.</li>
-                            <li class="mb-3">The table was scrollable if the content overflowed the height of the widget, but only when sharing designs via Venngage link - not in PDF downloads that most people used. Users didn’t realize this until they downloaded, then would have to go back and fix their design and re-download.</li>
-                        </ul>
+                    <p class="fw-light">I reviewed customer chats, collected observations from a contextual inquiry, and performed my own usability evaluation to come up with the following key pain points.</p>
+
+                    <div class="row gx-5 mt-5 mb-5">
+                        <div class="col-12 text-center">
+                            <figure>
+                                <img class="img-fluid" src="assets/table-complaints.png" style="border-radius:2%; max-width: 80%">
+                                    <figcaption class="figure-caption mt-1 fw-light">Observations and user complaints regarding the old table widget</figcaption>
+                            </figure>
+                        </div>
                     </div>
-                </div>
-                <div class="row gx-5">
-                    <img src="assets/tables-old-demo.gif" alt="A gif showing the editing process of the original table widget.">
-                </div>
-                    
+                
+                    <p class="fw-bold">Resizing:</p>
+
+                    <ul class="fw-light">
+                        <li class="mb-3">Users were limited by the cell content and the widget size when resizing, making it tedious to adjust a table to fit their content and the canvas. Users often had to go back and forth between resizing the widget and resizing the columns to get to their desired result. </li>
+                        <li class="mb-3">Users struggled to discover how to resize columns. The affordance was subtle (just a change to the cursor) and resizing was only available while hovering over the header row dividers.</li>
+                    </ul>
+                
+                    <p class="fw-bold">Scrolling:</p>
+                
+                    <ul class="fw-light">
+                        <li class="mb-3">The table was scrollable if the content overflowed the height of the widget, but only when sharing designs via Venngage link - not in PDF downloads that most people used. Users didn’t realize this until they downloaded, then would have to go back and fix their design and re-download.</li>
+                        <li class="mb-3">It wasn’t clear to all users that parts of the table were hidden in a scrollable area, or how to adjust the table to prevent scrolling.</li>
+                    </ul>
+                
+                    <p class="fw-bold">Small editing area not optimal for much content: </p>
+                
+                    <ul class="fw-light">
+                        <li class="mb-3">Table widgets were edited via a separate data table in a right menu. When tables had many columns or lots of content in a cell, the limited screen space made it difficult (and sometimes impossible) to select cells in the right menu and see the edits on the canvas</li>
+                    </ul>
+                
+                  <div class="row gx-5 mt-5 mb-5">
+                        <div class="col-12 text-center">
+                        <figure>
+                            <img class="img-fluid mt-4" src="assets/tables-old-demo.gif" style="border-radius:2%; max-width: 80%">
+                            <figcaption class="figure-caption mt-1 fw-light">A gif showing table editing with the original table widget.</figcaption>
+                        </figure>
+                      </div>
+                    </div>
                 
                 <h2 class="mt-5 mb-1">The solution</h2>
                 <hr>
                 
-               <div class="row gx-5">
-                    <div class="col-12">
-                        <ul class="fw-light">
-                            <li class="mb-3">A WYSIWYG table. Consistent with a basic text widget, text is edited directly on the canvas, and cells can be selected and styled via an in-context toolbar.</li>
-                            <li class="mb-3">Updated resizing behaviour and affordances:</li>
-                            <ul class="fw-light">
-                                <li class="mb-3">Users can hover over any part of a column divider to resize. There’s a clear affordance to indicate that resizing is available.</li>
-                                <li class="mb-3">Resizing the widget impacts all columns proportionally.</li>
-                                <li class="mb-3">Resizing one column divider impacts the size of only the column to the left of that divider. The widget size adjusts in response.</li>
-                                <li class="mb-5">Text characters wrap onto new lines, so the user can freely resize regardless of content</li>
-                            </ul>
+                    <p class="fw-bold">Select and view the table directly on canvas:</p>
 
-                        </ul>
-                    </div>
-                </div>
+                    <ul class="fw-light">
+                        <li class="mb-3">A WYSIWYG table. Consistent with a basic text widget, text is edited directly on the canvas, and cells can be selected and styled via an in-context toolbar.</li>
+                    </ul>  
+                
+                    <p class="fw-bold">Updated resizing behaviour and affordances:</p>
+
+                    <ul class="fw-light">
+                        <li class="mb-3">Users can hover over any part of a column divider to resize. There’s a clear affordance to indicate that resizing is available.</li>
+                        <li class="mb-3">Resizing the widget impacts all columns proportionally.</li>
+                        <li class="mb-3">Resizing one column divider impacts the size of only the column to the left of that divider. The widget size adjusts in response.</li>
+                        <li class="mb-5">Text characters wrap onto new lines, so the user can freely resize regardless of content</li>
+                    </ul>
+                
+                    
+                        
                 <div class="row gx-5">
-                    <img src="assets/tables-new-demo.gif" alt="A gif showing the design of the new table, with editing options in an in-context toolbar.">
+                    <div class="col-12 text-center">
+                        <figure>
+                            <img src="assets/tables-new-demo.gif" class="img-fluid" style="border-radius:2%; max-width: 80%">
+                            <figcaption class="figure-caption mt-1 fw-light">A gif showing table editing with the new table widget, with editing options in an in-context toolbar.</figcaption>
+                        </figure>
+                    </div>
                 </div>
 
                 <h2 class="mt-5 mb-1">The next steps</h2>
@@ -132,16 +164,16 @@
                 
                 <div class="row gx-5">
                     <div class="col-12 mb-4">
-                        <p class="fw-light">In the current design, users must choose from a list of options in the toolbar or right-click context menu to add and remove columns and rows. Through user tests we've found this pattern isn’t particularly learnable for some - we’ve noticed that some users have to pause and think each time they want to add or remove a column or row.</p>
+                        <p class="fw-light">In the current implementation, users must choose from a list of options in the toolbar or right-click context menu to add and remove columns and rows. Despite being consistent with common spreadsheet tools, through usability testing we've observed that this UX isn’t particularly learnable - we’ve found that users have to pause and think each time they want to add or remove a column or row.</p>
                     </div>
                 </div>
 
                 <div class="row gx-5">
-                    <div class="col-lg-6 col-sm-12 mb-5">
-                        <img src="assets/table-insert-button.png" class="img-fluid" alt="The insert options in the table toolbar.">
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <img src="assets/table-insert-right-click.png" class="img-fluid" alt="The insert options in the table toolbar.">
+                    <div class="text-center mb-5">
+                        <figure>
+                            <img src="assets/table-insert-right-click.png" class="img-fluid" style="max-width: 50%">
+                            <figcaption class="figure-caption mt-1 fw-light">The context menu shown on right-click of a table cell.</figcaption>
+                        </figure>
                     </div>
                 </div>
                 <div class="row gx-5">
