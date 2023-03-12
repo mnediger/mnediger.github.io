@@ -218,6 +218,13 @@ div .highlight-light {
 
 }
 
+div .highlight-purple {
+    color:#000000;
+    background-color: #E4E7FF;
+    border-radius: 6px;
+
+}
+
 .case-study-header {
     padding-top: 6.5rem;
     padding-bottom: 1rem;
