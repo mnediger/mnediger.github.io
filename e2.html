@@ -104,13 +104,15 @@
 
                     <p class="fw-light">We had to be strategic about how we defined the scope for alpha, beta, and full public launches. Make them large enough that they provided value and enabled us to get continuous feedback, but small enough that we could ship relatively quickly.</p>
                 
-                    <p class="fw-bold">Alpha</p>
+                    <h3>Alpha</h3>
                 
                     <p class="fw-light">We decided that the objective for alpha would be to evaluate the usability and value of a <a href="accessible-designer.html">flow to help users create accessible designs</a>&mdash;a new use case we were tackling alongside rebuilding the editor&mdash;in moderated user tests. This way, the editor didn't need to be integrated with our existing product or database, dramatically reducing the amount of work we needed to do before we could get it into users' hands.</p>
                 
                     <p class="fw-light">We could also offer barebones functionality&mdash;single-page designs, a text widget, a few basic shapes, some icons, basic image uploads, and PDF downloads&mdash;without worrying too much about the usability of the basic editing experience. This would be enough for users to create complete simple designs, but wouldn't take more than a few months to build.</p>
                 
-                    <p class="fw-bold">Beta</p>
+                    <p class="fw-bold">Plus, when we launched our beta, we could position the new editor as a way to make accessible designs, which wasn't possible in the existing editor.</p>
+                
+                    <h3>Beta</h3>
                 
                     <p class="fw-light">For beta, the editor would need to be a bit more full-featured, since we wanted to get real usage data with paid users. Here, I leveraged analytics data from our existing editor to define critical flows for engaged customers to define a "good-enough" beta scope. </p>
 
@@ -124,7 +126,7 @@
                       </div>
                     </div>
                 
-                    <p class="fw-bold">Public launch</p>
+                    <h3>Public launch</h3>
                     <p class="fw-light">The date and scope of our public launch would ultimately hinge on what we learned from our alpha and beta releases. From beta through public launch we continuously gathered feedback, both qualititative and quantitative, and prioritized improvements on a weekly basis.</p>
                 
                 
@@ -139,6 +141,8 @@
                     
                 <h2 class="mt-5 mb-1">Major pain points and solutions</h2>
                 <hr>
+                
+                <p class="fw-light">While we made numerous changes to UX details, redesigned a number of widgets, and redesigned the UI alongside building Venngage's first design system, here are some of the more significant usability issues we solved in the redesign.</p>
                 
                 <h3 class="">1. Lack of space for editing</h3>
                 
@@ -218,27 +222,38 @@
 
                 <h2 class="mt-5 mb-1">Other tablestakes improvements</h2>
                 <hr>
-                <h3 class="mb-0">Adding a right click context menu</h3>
+                <h3 >1. Adding a right click context menu</h3>
                 
                     <div class="row gx-5">
                         <div class="col-lg-8 col-sm-12">
-                            <h4>Problem</h4>
+                            
+                            <h4 class="mb-3">Problem</h4>
+                            
                             <p class="fw-light">Many new users weren't aware that widgets could be copied and pasted and would reach out to Support for help. We noticed in contextual interviews that many users right-clicked to copy and paste text into text widgets rather than using keyboard shortcuts.</p>
-                            <h4>Solution</h4>
+                            
+                            <h4 class="mb-3">Solution</h4>
+                            
                             <p class="fw-light">We added a context menu on right click that contained common editing actions, including copy and paste, and surfaced the keyboard shortcuts for those actions.</p>
-                            <h4>Results</h4>
-                            <p class="fw-light">15-30% of the actions available in the context menu were performed using the context menu (compared to via the toolbar or keyboard shortcuts)</p>
-                            <p class="fw-light">We saw a ~30% increase in usage of keyboard shortcuts (these weren’t previously surfaced to the user in the UI)</p>
+                            
+                            
+                            <h4 class="mb-3">Results</h4>
+                           
+                            <div class="col-12 p-3 highlight-light mb-3">
+                                 <p class="fw-light mb-0">&#128073; For each action available in the context menu, <span class="fw-bold">15-30% of the instances of each action were performed using the context menu</span> (compared to via the toolbar or keyboard shortcuts).</p>
+                            </div>
+                            <div class="col-12 p-3 highlight-light mb-3">
+                                 <p class="fw-light mb-0">&#128200; We also saw a <span class="fw-bold">~30% increase in usage of keyboard shortcuts</span> (these weren’t previously surfaced to the user in the UI).</p>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-sm-12">
-                            <img src="assets/e2-context.png" class="img-fluid">
+                            <img src="assets/e2-context.png" class="img-fluid" style="border-radius: 2%;">
                         </div>
                     </div>
                 
                 
-                <h3>Improving canvas zoom UX</h3>
+                <h3>2. Improving canvas zoom UX</h3>
                 
-                <h4>Problem</h4>
+                <h4 class="mb-3">Problem</h4>
                 
                     <div class="row gx-5">
                         <div class="col-lg-8 col-sm-12">
@@ -246,28 +261,31 @@
                             <p class="fw-light">Zoom options are available only via a dropdown, requiring 2 clicks for each change to the zoom level.</p>
                         </div>
                         <div class="col-lg-4 col-sm-12">
-                            <img src="assets/e2-zoom-old.png" class="img-fluid">
+                            <img src="assets/e2-zoom-old.png" class="img-fluid" style="border-radius: 2%;">
                         </div>
                     </div>
                 
                 <div class="row gx-5">
                     <div class="col-lg-8 col-sm-12">
-                        <h4>Solution</h4>
+                        <h4 class="mb-3">Solution</h4>
                         <ul>
                             <li class="fw-light">Added support for keyboard shortcuts and gestures</li>
                             <li class="fw-light">Added + and - buttons to allow users to increment the zoom in 1 click</li>
                             <li class="fw-light">Added a field for users to specify any zoom level directly</li>
                         </ul>
-                        <h4>Results</h4>
-                        <p class="fw-light">We saw a 32% increase in zoom usage after the update.</p>
+                        <h4 class="mb-3">Results</h4>
+                        
+                        <div class="col-12 p-3 highlight-light mb-3">
+                            <p class="fw-light mb-0">&#128200; We saw a <span class="fw-bold">32% increase in zoom usage</span> after the update.</p>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
-                        <img src="assets/e2-zoom-new.png" class="img-fluid">
+                        <img src="assets/e2-zoom-new.png" class="img-fluid" style="border-radius: 2%;">
                     </div>
                 </div>
                 
                 
-                <h3>Improving toolbar UX</h3>
+                <h3 class="mt-5">3. Improving toolbar UX</h3>
                 
                 <div class="row gx-5">
                     <div class="col-lg-6 col-sm-12 mb-4">
@@ -290,7 +308,7 @@
                 </div>
                 
                 
-                <h3>Adding a sidebar page manager</h3>
+                <h3>4. Adding a sidebar page manager</h3>
                 
                 <div class="row gx-5">
                     <div class="col-lg-6 col-sm-12 mb-4">
