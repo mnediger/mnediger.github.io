@@ -211,6 +211,15 @@ p span.text-highlight-light {
 
 }
 
+p span.text-highlight-white {
+    color:#000000;
+    background-color: #fff;
+    padding-right:4px;
+    padding-left:4px;
+    border-radius: 6px;
+
+}
+
 
 div .highlight-light {
     color:#000000;
