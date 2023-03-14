@@ -60,12 +60,12 @@
             <div class="container px-5">
 
                 <h1 class="display-4 lh-2 mb-3 fw-bold">Designing an intuitive, accessible editor</h1>
-                <p class="lead fw-light text-muted mb-2">Venngage | 2022</p>
+                <p class="lead fw-light mb-2">Venngage | 2022</p>
                 
                 
                 <h2 class="mt-5 mb-1">The context</h2>
                 
-                    <p class="fw-light text-muted">Product development at Venngage was slowing due to technical debt</p>
+                    <p class="fw-bold">Product development at Venngage was slowing due to technical debt</p>
                     <hr>
 
                     <p class="fw-light">Venngage is a web-based graphic design platform, launched in 2015. By 2021, product development within the design editor, the core of Venngage’s product, was slowing due to technical debt.</p>
@@ -82,11 +82,63 @@
                         <li class="mb-3">Support the creation of accessible designs (read the <a href="accessible-designer.html">full case study</a>)</li>
                         <li class="mb-3">Ship v1 within 6 months, with a larger launch within 1 year</li>
                     </ul>
-                    
-                <h2 class="mt-5 mb-1">Pain points and solutions</h2>
                 
-                    <hr>
-                    <p class="fw-light mb-0">To kick off the project I performed a usability evaluation, interviewed internal and external users, and reviewed support chats. Based on these, we tackled a number of pain points, including:</p>
+                <h2 class="mt-5 mb-1">Identifying usability issues and pain points in the existing editor</h2>
+                <hr>
+                <p class="fw-light mb-0">To kick off the project I performed a usability evaluation, interviewed internal and external users, and reviewed support chats. This data, alongside quantitative analyses of analytics data from our existing editor, would inform the planning and prioritization of our incremental releases over the next year.</p>
+                
+                    <div class="row gx-5 mt-5 mb-5">
+                        <div class="col-12 text-center">
+                            <figure>
+                                <img class="img-fluid mt-4" src="assets/e2-research.png" style="border-radius:2%; max-width: 90%">
+                                <figcaption class="figure-caption mt-1 fw-light">A summary of usability issues and feature requests for consideration in the new editor.</figcaption>
+                            </figure>
+                      </div>
+                    </div>
+                
+                <h2 class="mt-5 mb-1">Prioritizing and slicing a large year-long project</h2>
+                <p class="fw-bold">Defining a roadmap for alpha, beta, and public launches</p>
+                <hr>
+                
+                    <p class="fw-light">The large scope of this project posed a significant challenge&mdash;<i>how would we ship valuable slices that would be good enough to entice users to adopt the new editor, while the alternative, a fully-featured editor, was still available?</i></p>
+
+                    <p class="fw-light">We had to be strategic about how we defined the scope for alpha, beta, and full public launches. Make them large enough that they provided value and enabled us to get continuous feedback, but small enough that we could ship relatively quickly.</p>
+                
+                    <p class="fw-bold">Alpha</p>
+                
+                    <p class="fw-light">We decided that the objective for alpha would be to evaluate the usability and value of a <a href="accessible-designer.html">flow to help users create accessible designs</a>&mdash;a new use case we were tackling alongside rebuilding the editor&mdash;in moderated user tests. This way, the editor didn't need to be integrated with our existing product or database, dramatically reducing the amount of work we needed to do before we could get it into users' hands.</p>
+                
+                    <p class="fw-light">We could also offer barebones functionality&mdash;single-page designs, a text widget, a few basic shapes, some icons, basic image uploads, and PDF downloads&mdash;without worrying too much about the usability of the basic editing experience. This would be enough for users to create complete simple designs, but wouldn't take more than a few months to build.</p>
+                
+                    <p class="fw-bold">Beta</p>
+                
+                    <p class="fw-light">For beta, the editor would need to be a bit more full-featured, since we wanted to get real usage data with paid users. Here, I leveraged analytics data from our existing editor to define critical flows for engaged customers to define a "good-enough" beta scope. </p>
+
+
+                    <div class="row gx-5 mt-5 mb-5">
+                        <div class="col-12 text-center">
+                            <figure>
+                                <img class="img-fluid mt-4" src="assets/e2-prioritization.png" style="border-radius:2%; max-width: 90%">
+                                <figcaption class="figure-caption mt-1 fw-light">A snapshot of the spreadsheet I used to plan the project and align the team</figcaption>
+                            </figure>
+                      </div>
+                    </div>
+                
+                    <p class="fw-bold">Public launch</p>
+                    <p class="fw-light">The date and scope of our public launch would ultimately hinge on what we learned from our alpha and beta releases. From beta through public launch we continuously gathered feedback, both qualititative and quantitative, and prioritized improvements on a weekly basis.</p>
+                
+                
+                    <div class="row gx-5 mt-5 mb-5">
+                        <div class="col-12 text-center">
+                            <figure>
+                                <img class="img-fluid mt-4" src="assets/e2-early-completion.png" style="border-radius:2%; max-width: 90%">
+                                <figcaption class="figure-caption mt-1 fw-light">Some metrics from before the full launch</figcaption>
+                            </figure>
+                      </div>
+                    </div>
+                    
+                <h2 class="mt-5 mb-1">Major pain points and solutions</h2>
+                <hr>
                 
                 <h3 class="">1. Lack of space for editing</h3>
                 
