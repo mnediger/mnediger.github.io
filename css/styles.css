@@ -211,9 +211,18 @@ p span.text-highlight-light {
 
 }
 
+
 div .highlight-light {
     color:#000000;
     background-color: #F5F7FA;
+    border-radius: 6px;
+
+}
+
+
+div .highlight-white {
+    color:#000000;
+    background-color: #FFF;
     border-radius: 6px;
 
 }
