@@ -271,6 +271,13 @@ div .highlight-purple {
     border-radius: 100,0,100,100;
 }
 
+.case-study-header-5 {
+    padding-top: 6.5rem;
+    padding-bottom: 1rem;
+    background-color: #E57726;
+    border-radius: 100,0,100,100;
+}
+
 .callout {
     background-color:#E4E7FF;
     border-radius: 20px;

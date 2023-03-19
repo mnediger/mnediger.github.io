@@ -97,15 +97,16 @@
                     
                 
                 <h2 class="mt-5 mb-1">Understanding pain points</h2>
-                
-                    <hr>
+                <hr>
 
-                    <p class="fw-light">This type of simple visualization is a feature of many user designs and templates. For users to edit designs with these visuals, they had to:</p>
+                    <p class="fw-light">This type of simple visualization is a feature of many user designs and templates. For users to update a design with their data, they had to edit and adjust each component separately, including:</p>
                     <ul class="fw-light">
-                        <li class="mb-3">Input their data into a text widget and a chart widget separately</li>
-                        <li class="mb-3">Adjust the size and position of each widget to work with their content</li>
-                        <li class="mb-3">Readjust to work with any styling changes to the content or chart type</li>
+                        <li class="mb-3">Edit the percentage text on the canvas with their value</li>
+                        <li class="mb-3">Update the chart with the same value</li>
+                        <li class="mb-3">Adjust the size and position of the chart, the text, and the icon depending on the number of digits in their value</li>
                     </ul>
+                
+                    <p class="fw-light">If the user wanted to try out a different chart type or add or remove an icon, they’d have to reconfigure the composition completely: moving, resizing, and adjusting each component to make the layout presentable.</p>
                     <p class="fw-bold mb-5">As a result, most users stuck very closely to the template design, even if that wasn’t ideal for their content, or how they wanted to display their data.</p>
 
                     <div class="row gx-5 mt-5 mb-5">
@@ -129,16 +130,42 @@
                         <li class="mb-3"><span class="fw-bold">Chart style:</span> corner rounding, chart thickness, color</li>
                         <li class="mb-3"><span class="fw-bold">Icon:</span> color, may be present or absent</li>
                     </ul>
-                    <p class="fw-light">Here are some examples that need to be achievable by the widget:</p>
                 
                     <div class="text-center mt-5">
                         <figure>
                             <img src="assets/stat-chart-examples.png" class="img-fluid" style="border-radius:2%; max-width: 80%">
-                            <figcaption class="figure-caption mt-1 fw-light">Examples of combinations of text, chart, value, and icon that the final widget needed to be able to replicate.</figcaption>
+                            <figcaption class="figure-caption mt-1 fw-light">Examples of combinations of text, chart, value, and icon that the final widget would ideally be able to replicate.</figcaption>
                         </figure>
                     </div>
 
-
+<!-- 
+                <h2 class="mt-5 mb-1">The process</h2>
+                <hr>
+                
+                <h3>Resizing &amp; layout variety: balancing usability, flexibility, and effort</h3>
+                <p class="fw-light">After cataloguing a variety of examples from user designs and templates, I categorized them with the goal of understanding what unique  considerations each combination of chart type and layout might require for the resizing behaviour.</p>
+                
+                <p> IMAGE - categorized</p>
+                
+                <p class="fw-light">The resizing behaviour for layouts that included only one element with a flexible aspect ratio seemed simple enough to define: the elements with fixed aspect ratios could remain the same size while the element with a flexible aspect ratio could adjust to fill the available space while the widget was resized. </p>
+                
+                <p class="fw-light">The height of the widget could respond to the changes, as necessary, consistent with the resizing behaviour for our existing text widget.</p>
+                
+                <p class="fw-light">Since the alignment of elements within the widget tended to be consistent for each layout type (arrangement of elements), that didn't need to be under user control--it could simply be defined as part of the layout.</p>
+                
+                <p> IMAGE - resizing behaviour examples</p>
+                
+                <p class="fw-light">But if we wanted to offer layouts that combined a flexible-aspect ratio chart and the flexible-aspect ratio description text in the same row, we would need to define how the the width of each component was impacted as the widget was resize (or define a method to resize elements within the widget, rather than resizing the widget itself). </p>
+                
+                <p> IMAGE - some options for resizing layouts with elements with flexible aspect ratios in the same row</p>
+                
+                <p class="fw-light">I spent some time defining and prototyping possible approaches and testing them internally. </p>
+                
+                <h3>Information architecture explorations: maintaining consistency with other widgets</h3>
+                <p class="fw-light">Toolbar or right menu?</p>
+                
+-->
+                
                 
                 <h2 class="mt-5 mb-1">The design</h2>
                 <hr>
