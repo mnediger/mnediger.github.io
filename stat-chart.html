@@ -138,34 +138,48 @@
                         </figure>
                     </div>
 
-<!-- 
                 <h2 class="mt-5 mb-1">The process</h2>
                 <hr>
                 
-                <h3>Resizing &amp; layout variety: balancing usability, flexibility, and effort</h3>
-                <p class="fw-light">After cataloguing a variety of examples from user designs and templates, I categorized them with the goal of understanding what unique  considerations each combination of chart type and layout might require for the resizing behaviour.</p>
+                    <h3>Resizing &amp; layout variety: balancing usability, flexibility, and effort</h3>
+                    <p class="fw-light">After cataloguing a variety of examples from user designs and templates, I categorized them with the goal of understanding what unique  considerations each combination of chart type and layout might require for the resizing behaviour.</p>
                 
-                <p> IMAGE - categorized</p>
+                    <div class="text-center mb-5">
+                        <figure>
+                            <img src="assets/stat-chart-layouts.png" class="img-fluid">
+                            <figcaption class="figure-caption mt-1 fw-light">Potential widget layouts organized by type</figcaption>
+                        </figure>
+                    </div>
                 
-                <p class="fw-light">The resizing behaviour for layouts that included only one element with a flexible aspect ratio seemed simple enough to define: the elements with fixed aspect ratios could remain the same size while the element with a flexible aspect ratio could adjust to fill the available space while the widget was resized. </p>
+                <p class="fw-light">The resizing behaviour for layouts that included only one element with a flexible aspect ratio in a row seemed simple enough to define: the elements with fixed aspect ratios could remain the same size while the element with a flexible aspect ratio could adjust to fill the available space while the widget was resized. </p>
                 
                 <p class="fw-light">The height of the widget could respond to the changes, as necessary, consistent with the resizing behaviour for our existing text widget.</p>
                 
+                    <div class="text-center mb-5">
+                        <figure>
+                            <img src="assets/stat-chart-resizing-simple.png" class="img-fluid">
+                            <figcaption class="figure-caption mt-1 fw-light">Resizing behaviour for simple layouts</figcaption>
+                        </figure>
+                    </div>
+                
                 <p class="fw-light">Since the alignment of elements within the widget tended to be consistent for each layout type (arrangement of elements), that didn't need to be under user control--it could simply be defined as part of the layout.</p>
                 
-                <p> IMAGE - resizing behaviour examples</p>
+                <p class="fw-light">But if we wanted to offer layouts that combined a flexible-aspect ratio chart and the flexible-aspect ratio description text in the same row, we would need to define how the the width of each component would change as the widget was resized (or define a method to resize elements within the widget, rather than resizing the widget itself). </p>
                 
-                <p class="fw-light">But if we wanted to offer layouts that combined a flexible-aspect ratio chart and the flexible-aspect ratio description text in the same row, we would need to define how the the width of each component was impacted as the widget was resize (or define a method to resize elements within the widget, rather than resizing the widget itself). </p>
+                    <div class="text-center mb-5">
+                        <figure>
+                            <img src="assets/stat-chart-resizing-complex.png" class="img-fluid">
+                            <figcaption class="figure-caption mt-1 fw-light">Resizing behaviour options for complex layouts</figcaption>
+                        </figure>
+                    </div>
                 
-                <p> IMAGE - some options for resizing layouts with elements with flexible aspect ratios in the same row</p>
+                <p class="fw-light">I spent some time defining and prototyping possible approaches and testing them internally. Realizing that this could be a bit of a rabbit hole, I spoke to a developer to get a sense of the technical complexity involved for each option. As it turned out, the preferred option (Option 2) would significantly increase the technical complexity and effort to build the widget. With this in mind, we decided to stick to the row-only and column-only for our first version, with the potential to expand the available layouts in future depending on interest from customers.</p>
                 
-                <p class="fw-light">I spent some time defining and prototyping possible approaches and testing them internally. </p>
-                
+<!--
                 <h3>Information architecture explorations: maintaining consistency with other widgets</h3>
-                <p class="fw-light">Toolbar or right menu?</p>
-                
--->
-                
+                <p class="fw-light">Another decision to be made in the design of this widget was where to put the widget options.</p>
+                <p class="fw-light">A design principle at Venngage is to encourage direct manipulation where possible, so one option was to </p>
+-->  
                 
                 <h2 class="mt-5 mb-1">The design</h2>
                 <hr>
