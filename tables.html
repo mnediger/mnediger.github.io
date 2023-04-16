@@ -90,7 +90,7 @@
                     <p class="fw-bold">The existing table widget was confusing and tedious to edit</p>
                     <hr>
                 
-                    <p class="fw-light">I reviewed customer chats, collected observations from a contextual inquiry, and performed my own usability evaluation to come up with the following key pain points.</p>
+                    <p class="fw-light">I performed a customer support analysis, collected observations from a contextual inquiry, and performed my own usability evaluation to come up with the following key pain points.</p>
 
                     <div class="row gx-5 mt-5 mb-5">
                         <div class="col-12 text-center">
@@ -162,11 +162,8 @@
                 <h2 class="mt-5 mb-1">The next steps</h2>
                 <hr>
                 
-                <div class="row gx-5">
-                    <div class="col-12 mb-4">
-                        <p class="fw-light">In the current implementation, users must choose from a list of options in the toolbar or right-click context menu to add and remove columns and rows. Despite being consistent with common spreadsheet tools, through usability testing we've observed that this UX isn’t particularly learnable - we’ve found that users have to pause and think each time they want to add or remove a column or row.</p>
-                    </div>
-                </div>
+                <p class="fw-light mb-5">In the first slice of this project, we reused existing patterns (buttons in the in-context toolbar and in a right-click context menu) to surface options for adding and deleting rows and columns to the user. Since these approaches were consistent with common spreadsheet tools and didn't require any new, complex UI, we decided they'd be sufficient for a v1 and quick to build.</p>
+
 
                 <div class="row gx-5">
                     <div class="text-center mb-5">
@@ -176,26 +173,23 @@
                         </figure>
                     </div>
                 </div>
-                <div class="row gx-5">
-                    <div class="col-12">
-                        <p class="fw-light">To address this, we hope to add some affordances directly on the canvas to make it easier to:</p>
-                    </div>
-                </div>
-                <div class="row gx-5">
-                    <div class="col-12">
-                        <ul class="fw-light">
-                            <li class="mb-3">Add and remove columns and rows</li>
-                            <li class="mb-3">Reorder columns and rows</li>
-                            <li class="mb-3">Select entire columns and rows</li>
-                            <li class="mb-3">Move the table</li>
-                        </ul>
-                    </div>
-                </div>
+
+                <p class="fw-light">Through usability testing we observed that these actions are used very frequently during a typical table editing flow. Because of this, we think it's worthwhile to remove some friction in this flow by adding some affordances directly on the canvas to:</p>
+                <ul class="fw-light">
+                    <li class="mb-3">Add and remove columns and rows</li>
+                    <li class="mb-3">Reorder columns and rows</li>
+                    <li class="mb-3">Select entire columns and rows</li>
+                    <li class="mb-3">Move the table</li>
+                </ul>
+
                 <div class="row gx-5">
                     <div class="col-12">
                         <img src="assets/table-next-steps.png" alt="The table widget with add and delete buttons." class="img-fluid">
                     </div>
                 </div>
+                
+                <p class="fw-light">We're hoping to build these into a v2 soon.</p>
+
             
             </div>
             <div class="row gx-5 mt-3">
