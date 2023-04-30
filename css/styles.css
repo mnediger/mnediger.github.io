@@ -163,6 +163,13 @@ div .project-4:hover {
     transition: 0.3s;
 }
 
+div .project-placeholder {
+    border: 1px solid #D6D6D6;
+    border-radius: 6px;
+    margin: 1rem;
+    background:#ffffff;
+}
+
 
 .project-image img {
     width: 100%; /* image box size as % of container, see step 1 */
