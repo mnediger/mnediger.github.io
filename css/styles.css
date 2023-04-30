@@ -220,6 +220,15 @@ p span.text-highlight-white {
 
 }
 
+p span.text-tag-style {
+    color:#000000;
+    background-color: #ffffff90;
+    padding: 4px 12px 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.05rem;
+
+}
+
 
 div .highlight-light {
     color:#000000;
@@ -243,38 +252,9 @@ div .highlight-purple {
 
 }
 
-.case-study-header {
-    padding-top: 6.5rem;
+.case-study-header-basic {
+    padding-top: 10rem;
     padding-bottom: 1rem;
-    background-color: #4D24F4;
-    border-radius: 100,0,100,100;
-}
-
-.case-study-header-2 {
-    padding-top: 7rem;
-    padding-bottom: 1rem;
-    background-color: #119F4E;
-    border-radius: 100,0,100,100;
-}
-
-.case-study-header-3 {
-    padding-top: 6.5rem;
-    padding-bottom: 1rem;
-    background-color: #FBC600;
-    border-radius: 100,0,100,100;
-}
-
-.case-study-header-4 {
-    padding-top: 6.5rem;
-    padding-bottom: 1rem;
-    background-color: #D02778;
-    border-radius: 100,0,100,100;
-}
-
-.case-study-header-5 {
-    padding-top: 6.5rem;
-    padding-bottom: 1rem;
-    background-color: #E57726;
     border-radius: 100,0,100,100;
 }
 
@@ -283,9 +263,6 @@ div .highlight-purple {
     border-radius: 20px;
     padding: 1rem;
 }
-
-\
-
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
@@ -397,7 +374,7 @@ strong {
 }
 
 small, .small {
-  font-size: 0.875em;
+  font-size: 0.700em;
 }
 
 mark, .mark {
