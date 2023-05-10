@@ -76,7 +76,7 @@
                         <div class="row gx-5 mt-5">
                             <div class="col-12 text-center">
                                 <figure>
-                                    <img class="img-fluid" src="assets/accessible-templates.png">
+                                    <img class="img-fluid" src="assets/accessible-templates.png" style="width:100%">
                                     <figcaption class="figure-caption mt-1">Examples of report templates offered by Venngage</figcaption>
                                 </figure>
                             </div>
@@ -105,8 +105,8 @@
                     <div class="row gx-5 mb-4">
                         <div class="col-12 text-center">
                             <figure>
-                                <img class="img-fluid" src="assets/accessibility-discovery.png" style="border-radius:2%; max-width: 90%">
-                                <figcaption class="figure-caption mt-1">Notes from early discovery calls</figcaption>
+                                <img class="img-fluid" src="assets/accessibility-discovery.png" style="border-radius:2%">
+                                <figcaption class="figure-caption mt-1">Some notes from early discovery calls</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -115,19 +115,16 @@
                 <p class="fw-light">While I was getting up to speed on web and document accessibility and continuing outreach to users and accessibility experts, I took a look at the existing products in the space. Some key takeaways:</p>
                 
                     <ul class="fw-light mb-5">
-                        <li class="mb-2">None of <span class="fw-bold">Venngage’s direct competitors</span> (players in the consumer, non-expert graphic design space) offered even the most basic accessibility features, like contrast checkers or the ability to specific alt text for visuals. Exported designs were not accessible to users of assistive technologies like screen readers</li>
-                        <li class="mb-2">Most <span class="fw-bold">accessibility experts used a combination of Adobe Acrobat and PDF Accessibility Checker (PAC) 2021 to remediate documents.</span> </li>
-                        <ul>
-                            <li class="mb-2">These tools don’t cater to non-experts—they assume in-depth background knowledge on accessibility best practices and require some training to understand.</li>
-                        </ul>
-                        <li class="mb-2"><span class="fw-bold">PowerPoint offers a basic accessibility checker</span>, but even when used by an expert, output designs would still require some remediation with a professional tool.</li>
+                        <li class="mb-2">None of Venngage's <span class="fw-bold">direct competitors</span> (players in the consumer, non-expert graphic design space) offered even the most basic accessibility features, like contrast checkers or the ability to specific alt text for visuals. Exported <span class="fw-bold">designs were not accessible</span> to users of assistive technologies like screen readers</li>
+                        <li class="mb-2">Most accessibility experts used a combination of <span class="fw-bold">Adobe Acrobat and PDF Accessibility Checker (PAC) 2021</span> to remediate documents. These tools <span class="fw-bold">don’t cater to non-experts</span>—they assume in-depth background knowledge on accessibility best practices and require some training to understand.</li>
+                        <li class="mb-2"><span class="fw-bold">PowerPoint offers a basic accessibility checker</span>, but even when used by an expert, output designs would <span class="fw-bold">still require some remediation</span> with a professional tool.</li>
                     </ul>
                 
                 
                     <div class="row gx-5 mb-4">
                         <div class="col-12 text-center">
                             <figure>
-                                <img class="img-fluid" src="assets/accessibility-competitive.png" style="border-radius:2%; max-width: 90%">
+                                <img class="img-fluid" src="assets/accessibility-competitive.png" style="border-radius:2%">
                                 <figcaption class="figure-caption mt-1">Screenshots from some existing solutions. Functionality is scattered, incomplete, and/or unapproachable for non-experts.</figcaption>
                             </figure>
                         </div>
@@ -149,10 +146,46 @@
                             <p class="fw-light mb-5">Some are already using industry-standard tools like Adobe Acrobat to make their designs accessible, but aren’t confident in the accessibility of their output. These tools require training that many users don’t have access to.</p>
                         </div>
                     </div>
-
                 
-                <h3>Design principles</h3>
-                <p class="fw-light mb-3">The competitive analysis and initial user calls also informed the design principles that would guide the design of this project.</p>
+                <h2 class="mt-5 mb-1">The goal</h2>
+                <p class="fw-bold">Enable and support the creation of accessible designs</p>
+
+                <hr>
+                
+                <ol class="fw-light mb-5">
+                    <li class="mb-2">Just as products like Venngage and Canva have democratized design, we want to democratize accessible design. Designs should be more accessible by default, and improving design accessibility shouldn’t require a ton of training.</li>
+                    <li class="mb-2">Users should be able to export PDFs tagged following the PDF/UA standard.</li>
+                </ol>
+                
+                <h2>Mapping out flows and exploring high-level options</h2>
+                <hr>
+                <p class="fw-light mb-3">With clear goals and pain points in mind, I wanted to start by mapping out what the high-level flows could look like for a "complete" solution, from a user finding our accessible design maker from a search engine (most of our acquisition is organic traffic) to successfully exporting an accessible design.</p>
+                <p class="fw-light mb-3">This would help me identify dependencies for the project and launch as a whole, while helping me tease out major design decisions to be considered.</p>
+                
+                <div class="col-12 text-center">
+                    <figure class="mb-5">
+                            <img class="img-fluid" src="assets/accessibility-flows.png" style="border-radius: 2%">
+                            <figcaption class="figure-caption mt-1 fw-light">High-level flows and rough mockups.</figcaption>
+                    </figure>
+                </div>
+                
+                <p class="fw-light mb-3">One of the fundamental decisions to be made was how the accessibility guidance and functionality would fit into the user's editing experience. There were two main opposing options:</p>
+                
+                <ol type="a" class="fw-light mb-3">
+                    <li>Integrate prompts and guidance at relevant points in the editing flow, to reduce the remediation that needed to be done once the design was finished</li>
+                    <li>Provide a flow after the design was completed to guide the user through remediation</li>
+                </ol>
+                
+                <p class="fw-light mb-3">I fleshed out these two options with low-fi pen-on-paper sketches to help surface obvious benefits and limitations of each approach, and used these sketches to get feedback from internal testers and a few users. </p>
+                
+                <p class="fw-bold mb-3">It was immediately clear that regardless of whether we included prompts throughout the editing process, users valued being able to see the full accessibility status of their designs in one place&mdash;it eased some of their uncertainty about whether they were doing things right.</p>
+                
+                <p class="fw-light mb-3">Knowing this, it was prudent to lean on this option (a post-editing flow) to guide the user through the remediation process. Even if we later wanted to integrate prompts more seamlessly into the editing flow, this flow at the end of the editing process would still provide value.</p>
+                
+                <p class="fw-light mb-5">With this learning, the competitive analysis, and initial user calls in mind, I defined the principles that would inform the overall design.</p>
+                
+                <h2>Design principles</h2>
+                <hr>
                 
                 <ol class="fw-light">
                     <li class="mb-3"><span class="fw-bold">Surface all critical functionality in a single, cohesive flow.</span> The experience should guide the user through the steps required to make their design accessible, and surface the necessary functionality directly in that flow. </li>
@@ -160,46 +193,24 @@
                     <li class="mb-3"><span class="fw-bold">Validity over ease of use (at least for a v1).</span> For us to confidently market ourselves as a tool for making accessible designs, it was important to offer a comprehensive solution - one where it was possible to create a design that ticked all of the accessibility boxes, so to speak, right out of the box. A tool in which, if you followed all of the steps, meant you wouldn’t need to rely on another tool to do any clean-up at the end.</li>
                 </ol>
                 
-                <h2 class="mt-5 mb-1">The goal</h2>
-                <p class="fw-bold">Enable and support the creation of accessible designs</p>
-
-                <hr>
-                
-                <div class="highlight-white mb-3 ms-0 p-4">
-                    <p class="fw-light mb-0">&#128073; Just as products like Venngage and Canva have democratized design, we want to democratize accessible design. Designs should be more accessible by default, and improving design accessibility shouldn’t require a ton of training.</p>
-                </div>
-                <div class="highlight-white mb-3 ms-0 p-4">
-                    <p class="fw-light mb-0">&#128196; Users should be able to export PDFs tagged following the PDF/UA standard.</p>
-                </div>
-                
                 <h2 class="mt-5 mb-1">The solution</h2>
                 
                     <p class="fw-bold">An accessibility checker flow that guides the user through the process of making a design accessible</p>
                     <hr>
                 
-                    <div class="row gx-5">
+                    <div class="row gx-5 mb-5">
                         <div class="col-12">
                             <ol>
-                                <li class="fw-bold mb-3">Users can create from a selection of accessible templates. </li>
-                                    <ul>
-                                        <li class="fw-light mb-3">These templates are designed with accessibility in mind - they use accessible colours, their reading order and heading structure are set, links and tables are appropriately tagged, and their visuals have alt text or are marked as decorative.</li>
-                                    </ul>
-                                <li class="fw-bold mb-3">On export, users are guided through the remediation process via an accessibility checker flow that provides the necessary education in context.</li>
-                                    <ul>
-                                        <li class="fw-light mb-3">Users don’t need to seek out external resources, or dig through different menus, to get their job done.</li>
-                                    </ul>
-                                <li class="fw-bold mb-3">Users can see the accessibility status of their design at a glance.</li>
-                                    <ul>
-                                        <li class="fw-light mb-5">The accessibility checker provides a clear list of accessibility considerations, and their statuses are clear up front.</li>
-                                    </ul>
-
+                                <li class="fw-light mb-3"><span class="fw-bold">Users can create from a selection of accessible templates.</span> These templates are designed with accessibility in mind - they use accessible colours, their reading order and heading structure are set, links and tables are appropriately tagged, and their visuals have alt text or are marked as decorative.</li>
+                                <li class="fw-light mb-3"><span class="fw-bold">On export, users are guided through the remediation process via an accessibility checker flow that provides the necessary education in context.</span> Users don’t need to seek out external resources, or dig through different menus, to get their job done.</li>
+                                <li class="fw-light mb-3"><span class="fw-bold">Users can see the accessibility status of their design at a glance.</span>The accessibility checker provides a clear list of accessibility considerations, and their statuses are clear up front. </li>
                             </ol>
                         </div>
                     </div>
                 
                     <div class="col-12 text-center mb-5">
                         <figure>
-                            <img src="assets/Accessibility%20Checker%20Demo.gif" class="img-fluid" style="border-radius: 2%; max-width: 85%">
+                            <img src="assets/Accessibility%20Checker%20Demo.gif" class="img-fluid" style="border-radius: 2%">
                             <figcaption class="figure-caption mt-1 fw-light">A demo of the accessibility checker flow.</figcaption>
                         </figure>
                     </div>
@@ -256,15 +267,15 @@
                 <div class="row gx-5">
                         <div class="col-lg-6 col-sm-12">
                             <p class="fs-5 fw-bold">Clarified manual vs. automatic checks</p>
-                            <p class="fw-light">In the first version, the UI for the checker items was simpler, relying on alert and check icons to indicate whether an item needed the user’s attention.</p>
+                            <p class="fw-light">In the first version, we kept the top-level UI accessibility checker simple, relying on alert and check icons to indicate whether an item needed the user’s attention, conscious of the potential to overwhelm the user by providing too much information up front.</p>
                             <p class="fw-light">Tests revealed that users found this discouraging, as they assumed the alert icon meant that the system had detected issues (when in reality, it could mean that an issue was detected or that the user had to review something manually).</p>
                             <p class="fw-bold mb-5">To address this problem, added headers and tags to clarify the state of each item and what’s required of the user.</p>
                         </div>
                         <div class="col-lg-6 col-sm-12">
                             <p class="fs-5 fw-bold">Replaced generic guidance with clear action items</p>
-                            <p class="fw-light">An early version of the checker relied mostly on text to guide the user through each item. Users understood how to address the more familiar items, but some skipped over items where it wasn’t immediately clear what was required of them.</p>
-                            <p class="fw-light">To address this problem, we simplified the guidance and provided clear action items where possible. </p>
-                            <p class="fw-bold mb-5">In the “Use of colour” item, for example, we integrated a black and white filter that allowed users to see whether their design relied on colour to communicate essential information.</p>
+                            <p class="fw-light">In an early version of the checker we were overly cautious about missing or misrepresenting WCAG guidelines, resulting in items with lots of technical text. This alienated some users, who understood how to address the more familiar items, but often skipped over items where it wasn’t immediately clear what was required of them, because the descriptions were too exhaustive.</p>
+                            <p class="fw-light">To address this problem, we simplified the guidance and provided clear action items where possible.</p>
+                            <p class="fw-bold mb-5">In the “Use of colour” item, for example, we integrated a black and white filter that allowed users to see whether their design relied on colour to communicate essential information, rather than asking them to interpret guidelines for avoiding the use of color.</p>
                         </div>
                 </div>
                 
@@ -279,7 +290,6 @@
                 
                 <div class="row gx-5">
                     <div class="col-12">
-                        <p class="fw-light">We’ve released to some existing customers and are working towards a full marketing launch at the end of this quarter.</p>
                         <p class="fw-light">We’ve had very positive feedback from Venngage customers and accessibility experts, who appreciate the approach we’ve taken to integrate education directly into the accessibility checker.</p>
                     </div>
                 </div>
@@ -302,12 +312,8 @@
                             <p class="fw-light">&#128079; "Absolutely delighted to see this progressive work happening! Not only will it help create inclusive design but will raise awareness for accessible communications, fonts, and compliance with AODA regulations! Well done, Venngage!"</p>
                         </div>
                 </div>
-                
-                <div class="row gx-5">
-                    <div class="col-12">
-                        <p class="fw-light"><span class="fw-bold">12% of completed designs</span> with the new experience have been checked for accessibility issues.</p>
-                    </div>
-                </div>
+
+                <p class="fw-light">We’ve released to existing customers and are working towards a full marketing launch at the end of this quarter, when we hope to gather engagement data to help us prioritize further improvements.</p>
 
                 <h2 class="mt-5 mb-1">The next steps</h2>
                 <p class="fw-bold">Help more users create more accessible designs</p>
