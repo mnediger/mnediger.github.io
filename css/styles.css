@@ -115,6 +115,13 @@ footer { /* updated */
     height: 128px;
 }
 
+div .project-new {
+    border: 1px solid #D6D6D6;
+    border-radius: 6px;
+    margin: 1rem;
+    background:#ffffff;
+}
+
 div .project {
     border: 1px solid #D6D6D6;
     border-radius: 6px;
@@ -202,19 +209,20 @@ div .project-placeholder {
 
 p span.text-highlight-dark {
     color:#ffffff;
-    background-color: #4D24F4;
-    padding-right:4px;
-    padding-left:4px;
-    border-radius:6px;
+    background-color: #000000;
+    padding:4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius:4px;
 }
 
 
 p span.text-highlight-light {
-    color:#000000;
-    background-color: #e3e1fe;
-    padding-right:4px;
-    padding-left:4px;
-    border-radius: 6px;
+    background-color: #ffffff;
+    padding:4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 4px;
 
 }
 
@@ -803,7 +811,8 @@ progress {
 .container-xl,
 .container-lg,
 .container-md,
-.container-sm {
+.container-sm,
+.container-main {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -842,6 +851,40 @@ progress {
 
   }
 }
+
+@media (min-width: 576px) {
+  .container-main {
+    max-width: 540px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  ..container-main {
+    max-width: 720px;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container-main {
+    max-width: 960px;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container-main {
+    max-width: 1140px;
+    width: 85%;
+  }
+}
+@media (min-width: 1400px) {
+  .container-main {
+    max-width: 1320px;
+    width: 85%;
+
+  }
+}
+
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -11524,7 +11567,7 @@ section {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
     color: #ffffff;
-    background: #4D24F4;
+    background: #000000;
     border: 0.5px solid #D6D6D6;
     padding: 8px 16px;
 }
