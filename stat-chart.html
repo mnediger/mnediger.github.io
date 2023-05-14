@@ -18,8 +18,8 @@
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@800&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Manrope:wght@800&display=swap" rel="stylesheet">
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         
@@ -160,7 +160,7 @@
                         </figure>
                     </div>
                 
-                <p class="fw-light">Since the alignment of elements within the widget tended to be consistent for each layout type (arrangement of elements), that didn't need to be under user control&mdash;it could simply be defined as part of the layout.</p>
+                <p class="fw-light">Since the alignment of elements within the widget tended to be consistent for each layout type (arrangement of elements), that didn't need to be under user control--it could simply be defined as part of the layout.</p>
                 
                 <p class="fw-light">But if we wanted to offer layouts that combined a flexible-aspect ratio chart and the flexible-aspect ratio description text in the same row, we would need to define how the the width of each component would change as the widget was resized (or define a method to resize elements within the widget, rather than resizing the widget itself). </p>
                 
@@ -173,13 +173,11 @@
                 
                 <p class="fw-light">I spent some time defining and prototyping possible approaches and testing them internally. Realizing that this could be a bit of a rabbit hole, I spoke to a developer to get a sense of the technical complexity involved for each option. As it turned out, the preferred option (Option 2) would significantly increase the technical complexity and effort to build the widget. With this in mind, we decided to stick to the row-only and column-only for our first version, with the potential to expand the available layouts in future depending on interest from customers.</p>
                 
+<!--
                 <h3>Information architecture explorations: maintaining consistency with other widgets</h3>
-                <p class="fw-light">Another decision to be made in the design of this widget was where to put the controls for widget customization.</p>
-                <p class="fw-light">I wanted to follow existing patterns: for most widgets, including text, customization options were available in the in-context toolbar. The settings for more complex widgets that required more settings and a data table to accept data input, like charts and maps, were located in a large menu on the right side of the screen, which was only visible while working with those widgets.</p>
-                <p class="fw-light">I wasn't initially sure whether to maintain consistency with the text widget or the chart widgets in this case (or use some combination of the two)&mdash;arguments could be made for each option, and there were other tradeoffs to consider with each option.</p>
-                <p class="fw-light">What ultimately swayed the decision to using the in-context toolbar was a technical limitation: <span class="fw-bold">it would be significantly lower effort if we offered a simple input field for users to edit the chart value, rather than supporting on-canvas WYSIWYG editing</span> (which would have been preferred, as a design principle at Venngage is to encourage direct manipulation where possible).</p>
-                <p class="fw-light">Since editing the value would be the primary interaction with this widget, it should be as low-friction as possible. With the in-context toolbar, it would require one less step for the user to edit, compared to the right menu.</p>
-
+                <p class="fw-light">Another decision to be made in the design of this widget was where to put the widget options.</p>
+                <p class="fw-light">A design principle at Venngage is to encourage direct manipulation where possible, so one option was to </p>
+-->  
                 
                 <h2 class="mt-5 mb-1">The design</h2>
                 <hr>
@@ -229,24 +227,14 @@
                 </div>
 
             </div>
-            
-            <div class="row gx-5 mt-3">
-                <div class="btn">
-                        <a href="index.html#work" class="btn btn-light mb-0">Back to projects</a>
-                </div>
-            </div>
+
         </section>
         
         
          <!-- Footer-->
-        <footer class="bg-purple text-center py-5">
+        <footer class="text-center py-5">
             <div class="container px-5">
-                <div class="text-white-50 small">
-                    <div class="mb-2">&copy;Midori Nediger, 2023. All rights reserved.</div>
-                    <a href="https://www.linkedin.com/in/midori-nediger/" target="_blank">LinkedIn</a>
-                    <!-- <span class="mx-1">&middot;</span>
-                    <a href="#!">Resume</a> -->
-                </div>
+                    <p class="small">&copy;Midori Nediger, 2023. All rights reserved.</p>
             </div>
         </footer>
        
